@@ -24,4 +24,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::controller(ChatController::class)->group(function () {
     Route::get("/chat", 'index')->name('chat');
+    Route::post('/send-message', 'sendMessage')->name('sendMessage');
 });

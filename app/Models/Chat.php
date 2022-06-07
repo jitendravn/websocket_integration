@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
+use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Chat extends Model
 {
-    use HasFactory;
+    use HasFactory, InteractsWithSockets;
 }
